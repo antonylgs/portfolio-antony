@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,200;1,700&display=swap");
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(242, 242, 242);
+  background-image: url(image/background.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.window {
+  width: 700px;
+  height: 500px;
+  background-color: rgb(39, 39, 39);
+  border: 2px solid rgba(128, 128, 128, 0.5);
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  margin: 0px 12px;
+  left: 0px;
+  top: 0px;
+}
+
+.window-top-bar {
+  background-color: rgb(70, 70, 70);
+  height: 30px;
+  position: relative;
+}
+
+.window-top-bar-dots {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  gap: 8px;
+  left: 20px;
+  top: 10px;
+}
+
+.window-top-bar-dots li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.window-body {
+  width: 90%;
+  margin: auto;
+  max-height: 450px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.close {
+  background-color: rgb(251, 88, 88);
+}
+.minimize {
+  background-color: rgb(255, 219, 113);
+}
+.widen {
+  background-color: rgb(78, 206, 78);
+}
+.close:hover {
+  background-color: rgb(209, 70, 70);
+}
+.minimize:hover {
+  background-color: rgb(213, 183, 95);
+}
+.widen:hover {
+  background-color: rgb(52, 150, 52);
+}
+
+strong {
+  font-weight: 700;
+}
+
+a {
+  color: rgb(242, 242, 242);
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  font-size: 14px;
+}
+
+.i {
+  font-style: italic;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Me Window */
+/*Me Top*/
+#me-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  margin-top: 16px;
+}
+#me-picture {
+  min-width: 100px;
+  min-height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  background-image: url(image/me.JPG);
+  background-size: 130%;
+  background-position: -20px 0px;
+  background-repeat: no-repeat;
+}
+#me-name-desc {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+#me-name {
+  margin-bottom: 8px;
+}
+#me-desc {
+  font-weight: 200;
+  font-style: italic;
+}
+/*Me Infos*/
+#me-infos {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+}
+/*Me Infos Right*/
+#me-infos-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.infos-right-title {
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+.infos-right-infos {
+  text-align: left;
+  position: relative;
+  left: 9px;
+  font-size: 12px;
+}
+.infos-right-infos li {
+  margin-bottom: 8px;
+}
+#languages-icons {
+  font-size: 20px;
+}
+#socials li {
+  background-color: rgb(65, 154, 248);
+  text-align: center;
+  font-weight: 700;
+}
+/*Me Infos Left*/
+#me-infos-left {
+  margin-right: 12px;
+}
+#localisation {
+  margin-bottom: 24px;
+}
+#programmation-languages {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-size: 52px;
+}
+#languages {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  text-justify: inter-word;
+  margin-left: 20px;
+  gap: 12px;
+  font-size: 16px;
+}
+#cv {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+#cv a {
+  font-weight: 700;
+  background-color: rgb(65, 154, 248);
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+
+/*Project Window*/
+#my-projects h2 {
+  margin-top: 16px;
+}
+#projects-tiny-text {
+  margin-bottom: 32px;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 200;
+}
+#projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+.project {
+  max-width: 200px;
+}
+.project-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 4px 0px;
+}
+.project-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+.project-description {
+  font-style: italic;
+  font-weight: 200;
+}
+
+/*Navbar*/
+#navbar {
+  position: absolute;
+  bottom: 10px;
+  background-color: rgb(39, 39, 39, 0.9);
+  border: 2px solid rgba(128, 128, 128, 0.5);
+  width: 300px;
+  height: 75px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#navbar img {
+  cursor: pointer;
+}
+#contact-icon {
+  height: 58px;
+}
+#finder-icon {
+  height: 70px;
+}
+#me-icon-text,
+#projects-icon-text {
+  position: absolute;
+  top: -30px;
+}
+#me-icon-text {
+  left: 65px;
+}
+#projects-icon-text {
+  right: 30px;
+}
+
+/*Media Query*/
+@media screen and (max-width: 650px) {
+  .infos-right-infos {
+    position: static;
+  }
+}
