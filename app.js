@@ -76,7 +76,6 @@ const arrayTopBars = Array.from(allTopBars);
 
 // Get the movement of the mouse and move the window accordingly
 const onDrag = ({ movementX, movementY }) => {
-  console.log(movementX);
   arrayWindows.forEach((w) => {
     let getStyle = window.getComputedStyle(w);
     let left = parseInt(getStyle.left);
@@ -90,10 +89,10 @@ const onDrag = ({ movementX, movementY }) => {
 // When mousedown on a window's topbar then enable the mousemove event listener and the drag movement
 arrayTopBars.forEach((t) => {
   t.addEventListener("mousedown", () => {
-    t.addEventListener("mousemove", onDrag);
+    document.addEventListener("mousemove", onDrag);
   });
 
   document.addEventListener("mouseup", () => {
-    t.removeEventListener("mousemove", onDrag);
+    document.removeEventListener("mousemove", onDrag);
   });
 });

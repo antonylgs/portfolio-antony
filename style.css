@@ -11,6 +11,7 @@
 html {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -24,6 +25,7 @@ body {
   background-image: url(image/background.jpeg);
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 .window {
@@ -64,7 +66,6 @@ body {
 }
 
 .window-body {
-  width: 90%;
   margin: auto;
   max-height: 450px;
   overflow-y: scroll;
@@ -115,8 +116,25 @@ p {
   display: none;
 }
 
+span.icon > img {
+  width: 15px;
+  height: 15px;
+}
+
+span.icon > img.big-icon {
+  width: 30px;
+  height: 30px;
+}
+
 /* Me Window */
 /*Me Top*/
+
+#me .window-body {
+  overflow: hidden;
+  width: 90%;
+  margin-top: 24px;
+}
+
 #me-top {
   display: flex;
   align-items: center;
@@ -166,7 +184,7 @@ p {
 .infos-right-infos {
   text-align: left;
   position: relative;
-  left: 9px;
+  left: 5px;
   font-size: 12px;
 }
 .infos-right-infos li {
@@ -217,35 +235,42 @@ p {
 /*Project Window*/
 #my-projects h2 {
   margin-top: 16px;
+  margin-left: 16px;
 }
 #projects-tiny-text {
   margin-bottom: 32px;
   font-size: 12px;
   font-style: italic;
   font-weight: 200;
+  margin-left: 16px;
 }
 #projects-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
+  justify-content: space-around;
 }
 .project {
   max-width: 200px;
+  margin-bottom: 20px;
 }
 .project-image {
   width: 200px;
   height: 200px;
   object-fit: cover;
   margin: 4px 0px;
+  border-radius: 8px;
 }
 .project-title {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 12px;
+  background-color: rgb(65, 154, 248);
+  padding: 4px;
+  width: fit-content;
 }
 .project-description {
   font-style: italic;
   font-weight: 200;
+  font-size: 12px;
 }
 
 /*Navbar*/
@@ -286,5 +311,12 @@ p {
 @media screen and (max-width: 650px) {
   .infos-right-infos {
     position: static;
+  }
+}
+
+@media screen and (max-width: 638px) {
+  #me .window-body {
+    overflow: scroll;
+    padding-bottom: 20px;
   }
 }
