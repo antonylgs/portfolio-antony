@@ -90,10 +90,7 @@ export default function ProjectsWindow(props) {
           </div>
           <div className="w-[60px] h-[2px] ml-8 bg-[rgba(255,255,255,0.2)]" />
         </a>
-        <a
-          href="https://www.linkedin.com/posts/antonylanglois_fullstack-flask-ubuntu-activity-7157702339380858880-Ktyy?utm_source=share&utm_medium=member_desktop"
-          target="_blank"
-        >
+        <a href="https://simple-transfer.antonylanglois.com/" target="_blank">
           <div
             className={`flex ml-8 mr-8 mb-4 mt-4 gap-6 flex-col ${
               props.expanded ? "lg:flex-col" : "lg:flex-row"
@@ -117,10 +114,10 @@ export default function ProjectsWindow(props) {
                 taught me so much about setting up an Ubuntu VPS with Nginx and
                 Gunicorn to deploy a Flask API. It also included SSL
                 certificates and DNS redirections.{" "}
-                <span className="text-sm italic text-stone-500">
+                {/* <span className="text-sm italic text-stone-500">
                   Service currently off, you can see a demo video on my linked
                   in post
-                </span>
+                </span> */}
               </p>
             </div>
           </div>
