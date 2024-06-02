@@ -7,6 +7,7 @@ export default function ProjectsWindow(props) {
       setShowWindow={props.setShowWindow}
       setExpanded={props.setExpanded}
       expanded={props.expanded}
+      overflow={true}
     >
       <div
         className={`${

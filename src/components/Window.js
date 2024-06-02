@@ -19,7 +19,13 @@ export default function Window(props) {
           onClick={() => props.setExpanded(!props.expanded)}
         ></div>
       </div>
-      <div className="overflow-y-scroll sm:h-[95%]">{props.children}</div>
+      <div
+        className={`${
+          props.overflow ? "overflow-y-scroll" : "overflow-y-hidden"
+        } sm:h-[95%]`}
+      >
+        {props.children}
+      </div>
     </div>
   );
 }

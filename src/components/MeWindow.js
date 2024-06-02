@@ -7,6 +7,7 @@ export default function MeWindow(props) {
       setShowWindow={props.setShowWindow}
       setExpanded={props.setExpanded}
       expanded={props.expanded}
+      overflow={false}
     >
       {/* Me */}
       <div className="flex flex-col sm:flex-row gap-6 ml-8 mt-8 mr-8 mb-6">
