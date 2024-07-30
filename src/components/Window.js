@@ -39,7 +39,7 @@ const Window = forwardRef(({ children, childRef, ...props }, ref) => {
       document.removeEventListener("mousemove", onMouseMove);
       document.removeEventListener("mouseup", onMouseUp);
     };
-  }, [isDragging]);
+  }, [isDragging, onMouseMove]);
 
   useEffect(() => {
     if (ref) {
@@ -88,5 +88,7 @@ const Window = forwardRef(({ children, childRef, ...props }, ref) => {
     </div>
   );
 });
+
+MeWindow.displayName = "Window";
 
 export default Window;

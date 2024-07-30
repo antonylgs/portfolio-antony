@@ -262,4 +262,6 @@ const MeWindow = forwardRef(({ childRef, ...props }, ref) => {
   );
 });
 
+MeWindow.displayName = "MeWindow";
+
 export default MeWindow;
