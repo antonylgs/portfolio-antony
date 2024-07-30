@@ -40,11 +40,11 @@ export default function Home() {
   useEffect(() => {
     centerWindow();
     setIsPositioned(true);
-  }, [centerWindow]);
+  }, []);
 
   useEffect(() => {
     centerWindow();
-  }, [expanded, centerWindow]);
+  }, [expanded]);
 
   return (
     <main

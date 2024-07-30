@@ -285,6 +285,6 @@ const ProjectsWindow = forwardRef(({ childRef, ...props }, ref) => {
   );
 });
 
-MeWindow.displayName = "ProjectsWindow";
+ProjectsWindow.displayName = "ProjectsWindow";
 
 export default ProjectsWindow;
