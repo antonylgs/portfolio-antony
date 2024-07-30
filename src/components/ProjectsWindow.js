@@ -1,14 +1,10 @@
 import Image from "next/image";
 import Window from "./Window";
+import { forwardRef } from "react";
 
-export default function ProjectsWindow(props) {
+const ProjectsWindow = forwardRef(({ childRef, ...props }, ref) => {
   return (
-    <Window
-      setShowWindow={props.setShowWindow}
-      setExpanded={props.setExpanded}
-      expanded={props.expanded}
-      overflow={true}
-    >
+    <Window childRef={childRef} ref={ref} overflow={true} {...props}>
       <div
         className={`${
           props.expanded ? "lg:grid lg:grid-cols-2" : "flex flex-col"
@@ -287,4 +283,6 @@ export default function ProjectsWindow(props) {
       </div>
     </Window>
   );
-}
+});
+
+export default ProjectsWindow;

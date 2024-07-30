@@ -1,7 +1,7 @@
 "use client";
 import MeWindow from "@/components/MeWindow";
 import ProjectsWindow from "@/components/ProjectsWindow";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,6 +9,42 @@ export default function Home() {
   const [activeWindow, setActiveWindow] = useState(1);
   const [expanded, setExpanded] = useState(false);
   const [hoveredIcon, setHoveredIcon] = useState(null);
+
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [isPositioned, setIsPositioned] = useState(false);
+
+  const meWindowRef = useRef(null);
+  const projectsWindowRef = useRef(null);
+  const meWindowHandlerRef = useRef(null);
+  const projectsWindowHandlerRef = useRef(null);
+
+  const getInitialPosition = () => {
+    const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
+
+    const currentRef = activeWindow === 1 ? meWindowRef : projectsWindowRef;
+
+    const elementWidth = currentRef.current?.offsetWidth || 600;
+    const elementHeight = currentRef.current?.offsetHeight || 550;
+
+    return {
+      x: (windowWidth - elementWidth) / 2,
+      y: (windowHeight - elementHeight - 50) / 2,
+    };
+  };
+
+  const centerWindow = () => {
+    setPosition(getInitialPosition());
+  };
+
+  useEffect(() => {
+    centerWindow();
+    setIsPositioned(true);
+  }, []);
+
+  useEffect(() => {
+    centerWindow();
+  }, [expanded]);
 
   return (
     <main
@@ -20,14 +56,24 @@ export default function Home() {
         <MeWindow
           setShowWindow={setShowWindow}
           setExpanded={setExpanded}
+          setPosition={setPosition}
           expanded={expanded}
+          position={position}
+          isPositioned={isPositioned}
+          ref={meWindowRef}
+          childRef={meWindowHandlerRef}
         />
       )}
       {showWindow && activeWindow == 2 && (
         <ProjectsWindow
           setShowWindow={setShowWindow}
           setExpanded={setExpanded}
+          setPosition={setPosition}
           expanded={expanded}
+          position={position}
+          isPositioned={isPositioned}
+          ref={projectsWindowRef}
+          childRef={projectsWindowHandlerRef}
         />
       )}
       <div className="absolute flex flex-col sm:flex-row sm:bottom-8 bottom-4 right-4 sm:right-auto gap-6 sm:gap-12 bg-[rgba(39,39,39,0.9)] border-[rgba(128,128,128,0.5)] border-2 sm:px-8 px-2 sm:py-2 py-4 rounded-xl">

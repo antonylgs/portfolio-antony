@@ -1,14 +1,10 @@
 import Window from "./Window";
 import Image from "next/image";
+import { forwardRef } from "react";
 
-export default function MeWindow(props) {
+const MeWindow = forwardRef(({ childRef, ...props }, ref) => {
   return (
-    <Window
-      setShowWindow={props.setShowWindow}
-      setExpanded={props.setExpanded}
-      expanded={props.expanded}
-      overflow={false}
-    >
+    <Window childRef={childRef} ref={ref} overflow={false} {...props}>
       {/* Me */}
       <div className="flex flex-col sm:flex-row gap-6 ml-8 mt-8 mr-8 mb-6">
         <div className="rounded-xl sm:rounded-full min-w-[80px] min-h-[120px] sm:min-h-[80px] profile-picture" />
@@ -264,4 +260,6 @@ export default function MeWindow(props) {
       </div>
     </Window>
   );
-}
+});
+
+export default MeWindow;
