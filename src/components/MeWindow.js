@@ -99,7 +99,7 @@ const MeWindow = forwardRef(({ childRef, ...props }, ref) => {
                     alt="Arrow from left to right icon"
                   />
                   <span>
-                    Junior Marketing Engineer{" "}
+                    Developer & Marketing Engineer{" "}
                     <span className=" text-sm italic text-stone-500">
                       [Sep.2022 - Sep.2023]
                     </span>
@@ -114,7 +114,7 @@ const MeWindow = forwardRef(({ childRef, ...props }, ref) => {
                     alt="Arrow from left to right icon"
                   />
                   <span>
-                    Junior Developer{" "}
+                    Full-stack Developer{" "}
                     <span className=" text-sm italic text-stone-500">
                       [Sep.2023 - Now]
                     </span>
