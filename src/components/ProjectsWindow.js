@@ -10,6 +10,36 @@ const ProjectsWindow = forwardRef(({ childRef, ...props }, ref) => {
           props.expanded ? "lg:grid lg:grid-cols-2" : "flex flex-col"
         }`}
       >
+        <a href="https://keyboard-invader.vercel.app/" target="_blank">
+          <div
+            className={`flex ml-8 mr-8 mb-4 mt-4 gap-6 flex-col ${
+              props.expanded ? "lg:flex-col" : "lg:flex-row"
+            }`}
+          >
+            <Image
+              width={220}
+              height={220}
+              src="/keyboard-invader.png"
+              className="rounded-lg w-[220px] h-[128px]"
+              alt="Auto Bonus Chest Claimer Twitch Extension"
+            />
+            <div className="flex flex-col gap-2">
+              <h2 className="font-bold text-xl">Keyboard Invader</h2>
+              <div className="flex gap-2 font-bold flex-wrap">
+                <div className="px-2 bg-blue-500 rounded-lg">ReactJs</div>
+                <div className="px-2 bg-yellow-500 rounded-lg text-black">
+                  Javascript
+                </div>
+              </div>
+              <p className="text-sm">
+                A web game made to learn different language keyboards while
+                having fun, with different game modes and difficulties as well
+                as a shooting aspect!
+              </p>
+            </div>
+          </div>
+          <div className="w-[60px] h-[2px] ml-8 bg-[rgba(255,255,255,0.2)]" />
+        </a>
         <a
           href="https://chromewebstore.google.com/detail/twitch-bonus-chest-auto-c/pdjfehhlnpmhgdkoplaoiigclmkoifgb"
           target="_blank"
@@ -32,7 +62,7 @@ const ProjectsWindow = forwardRef(({ childRef, ...props }, ref) => {
                 <div className="px-2 bg-yellow-500 rounded-lg text-black">
                   Javascript
                 </div>
-                <div className="px-2 bg-purple-500 rounded-lg">75+ users</div>
+                <div className="px-2 bg-purple-500 rounded-lg">150+ users</div>
               </div>
               <p className="text-sm">
                 I&apos;ve made this extension in other to learn a new field of

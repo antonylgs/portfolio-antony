@@ -114,7 +114,7 @@ const MeWindow = forwardRef(({ childRef, ...props }, ref) => {
                     alt="Arrow from left to right icon"
                   />
                   <span>
-                    Full-stack Developer{" "}
+                    TypeScript & C# Developer{" "}
                     <span className=" text-sm italic text-stone-500">
                       [Sep.2023 - Now]
                     </span>
