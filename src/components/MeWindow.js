@@ -116,7 +116,7 @@ const MeWindow = forwardRef(({ childRef, ...props }, ref) => {
                   <span>
                     TypeScript & C# Developer{" "}
                     <span className=" text-sm italic text-stone-500">
-                      [Sep.2023 - Now]
+                      [Sep.2023 - Sep.2024]
                     </span>
                   </span>
                 </div>

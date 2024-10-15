@@ -62,7 +62,7 @@ const ProjectsWindow = forwardRef(({ childRef, ...props }, ref) => {
                 <div className="px-2 bg-yellow-500 rounded-lg text-black">
                   Javascript
                 </div>
-                <div className="px-2 bg-purple-500 rounded-lg">150+ users</div>
+                <div className="px-2 bg-purple-500 rounded-lg">200+ users</div>
               </div>
               <p className="text-sm">
                 I&apos;ve made this extension in other to learn a new field of
