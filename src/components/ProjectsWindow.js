@@ -32,9 +32,9 @@ const ProjectsWindow = forwardRef(({ childRef, ...props }, ref) => {
                 </div>
               </div>
               <p className="text-sm">
-                A web game made to learn different language keyboards while
-                having fun, with different game modes and difficulties as well
-                as a shooting aspect!
+                A web game designed to make learning different language
+                keyboards fun, featuring various game modes, difficulty levels,
+                and a shooting element!
               </p>
             </div>
           </div>
@@ -65,10 +65,10 @@ const ProjectsWindow = forwardRef(({ childRef, ...props }, ref) => {
                 <div className="px-2 bg-purple-500 rounded-lg">200+ users</div>
               </div>
               <p className="text-sm">
-                I&apos;ve made this extension in other to learn a new field of
-                creation and user interaction. It lead me to explore the
-                possiblities and process of uploading an extension pubicly and
-                having recurrent users over time.
+                I&apos;ve created this extension to explore a new field of
+                creation and user interaction. This process led me to discover
+                the possibilities and steps involved in publicly uploading an
+                extension and gaining recurring users over time.
               </p>
             </div>
           </div>
@@ -138,9 +138,9 @@ const ProjectsWindow = forwardRef(({ childRef, ...props }, ref) => {
               </div>
               <p className="text-sm">
                 An online file transfer application. This fullstack project
-                taught me so much about setting up an Ubuntu VPS with Nginx and
-                Gunicorn to deploy a Flask API. It also included SSL
-                certificates and DNS redirections.{" "}
+                taught me a great deal about setting up an Ubuntu VPS with Nginx
+                and Gunicorn to deploy a Flask API, along with implementing SSL
+                certificates and DNS redirections.
                 {/* <span className="text-sm italic text-stone-500">
                   Service currently off, you can see a demo video on my linked
                   in post
@@ -176,9 +176,9 @@ const ProjectsWindow = forwardRef(({ childRef, ...props }, ref) => {
                 </div>
               </div>
               <p className="text-sm">
-                As a student project with Lilian Hammache, we decided to reverse
-                engineer the Vinted website to receive notifications on Discord
-                as soon as products are posted online.
+                For a student project with Lilian Hammache, we decided to
+                reverse engineer the Vinted website to receive Discord
+                notifications as soon as new products are posted online.
               </p>
             </div>
           </div>
@@ -208,11 +208,11 @@ const ProjectsWindow = forwardRef(({ childRef, ...props }, ref) => {
                 </div>
               </div>
               <p className="text-sm">
-                From the creation of the Figma mockups to the online release
-                this portfolio was made to help her apply to companies with an
-                online, innovative and modern resume. She ended up getting a job
-                in France and the recruiter complimented her for her refreshing
-                portfolio.
+                From creating the Figma mockups to the online launch, this
+                portfolio was designed to help her apply to companies with an
+                innovative and modern online resume. She ultimately secured a
+                job in France, where the recruiter praised her for her
+                refreshing portfolio.
               </p>
             </div>
           </div>
@@ -238,9 +238,9 @@ const ProjectsWindow = forwardRef(({ childRef, ...props }, ref) => {
                 <div className="px-2 bg-purple-500 rounded-lg">MVC</div>
               </div>
               <p className="text-sm">
-                This project was made in my early days to teach me the MVC
-                structure using PHP and storing data for a blog type website
-                where people can post images and text anonymously.
+                This project was created in my early days to teach me the MVC
+                structure using PHP and to store data for a blog-style website,
+                allowing users to post images and text anonymously.
               </p>
             </div>
           </div>
@@ -266,9 +266,8 @@ const ProjectsWindow = forwardRef(({ childRef, ...props }, ref) => {
                 <div className="px-2 bg-purple-500 rounded-lg">MVC</div>
               </div>
               <p className="text-sm">
-                This project was made in my early days to teach me the MVC
-                structure using PHP and storing data for a blog type website
-                where people can post images and text anonymously.
+                A private Minecraft blog created to explore the possibilities of
+                MVC patterns with PHP and styling with CSS.
               </p>
             </div>
           </div>
@@ -303,9 +302,9 @@ const ProjectsWindow = forwardRef(({ childRef, ...props }, ref) => {
                 </div>
               </div>
               <p className="text-sm">
-                A portfolio made for and in collaboration with Wafa Ghazlani. It
-                allowed me to work with a designer and help her in her career
-                and reaseach of a job at the time we made it.
+                A portfolio created in collaboration with Wafa Ghazlani. It
+                allowed me to work alongside a designer and assist her in her
+                career and job search at the time we developed it.
               </p>
             </div>
           </div>
