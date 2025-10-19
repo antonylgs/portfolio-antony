@@ -10,6 +10,74 @@ const ProjectsWindow = forwardRef(({ childRef, ...props }, ref) => {
           props.expanded ? "lg:grid lg:grid-cols-2" : "flex flex-col"
         }`}
       >
+        <a
+          href="https://chromewebstore.google.com/detail/twitch-bonus-chest-auto-c/pdjfehhlnpmhgdkoplaoiigclmkoifgb"
+          target="_blank"
+        >
+          <div
+            className={`flex ml-8 mr-8 mb-4 mt-4 gap-6 flex-col ${
+              props.expanded ? "lg:flex-col" : "lg:flex-row"
+            }`}
+          >
+            <Image
+              width={220}
+              height={220}
+              src="/twitch-extension.png"
+              className="rounded-lg w-[220px] h-[128px]"
+              alt="Auto Bonus Chest Claimer Twitch Extension"
+            />
+            <div className="flex flex-col gap-2">
+              <h2 className="font-bold text-xl">Chrome Extension for Twitch</h2>
+              <div className="flex gap-2 font-bold flex-wrap">
+                <div className="px-2 bg-yellow-500 rounded-lg text-black">
+                  Javascript
+                </div>
+                <div className="px-2 bg-purple-500 rounded-lg">2200+ users</div>
+              </div>
+              <p className="text-sm">
+                I&apos;ve created this extension to explore a new field of
+                creation and user interaction. This process led me to discover
+                the possibilities and steps involved in publicly uploading an
+                extension and gaining recurring users over time.
+              </p>
+            </div>
+          </div>
+          <div className="w-[60px] h-[2px] ml-8 bg-[rgba(255,255,255,0.2)]" />
+        </a>
+        <a
+          href="https://www.linkedin.com/posts/antonylanglois_reverseengineering-python-flask-activity-7170815952886943745-9v6h?utm_source=share&utm_medium=member_desktop"
+          target="_blank"
+        >
+          <div
+            className={`flex ml-8 mr-8 mb-4 mt-4 gap-6 flex-col ${
+              props.expanded ? "lg:flex-col" : "lg:flex-row"
+            }`}
+          >
+            <Image
+              width={220}
+              height={220}
+              src="/vinbot.png"
+              className="rounded-lg w-[220px] h-[128px]"
+              alt="VinBot"
+            />
+            <div className="flex flex-col gap-2">
+              <h2 className="font-bold text-xl">VinBot</h2>
+              <div className="flex gap-2 font-bold flex-wrap">
+                <div className="px-2 bg-orange-500 rounded-lg">Python</div>
+                <div className="px-2 bg-purple-500 rounded-lg">Automation</div>
+                <div className="px-2 bg-red-500 rounded-lg">
+                  Reverse Engineering
+                </div>
+              </div>
+              <p className="text-sm">
+                For a student project with Lilian Hammache, we decided to
+                reverse engineer the Vinted website to receive Discord
+                notifications as soon as new products are posted online.
+              </p>
+            </div>
+          </div>
+          <div className="w-[60px] h-[2px] ml-8 bg-[rgba(255,255,255,0.2)]" />
+        </a>
         <a href="https://keyboard-invader.vercel.app/" target="_blank">
           <div
             className={`flex ml-8 mr-8 mb-4 mt-4 gap-6 flex-col ${
@@ -35,40 +103,6 @@ const ProjectsWindow = forwardRef(({ childRef, ...props }, ref) => {
                 A web game designed to make learning different language
                 keyboards fun, featuring various game modes, difficulty levels,
                 and a shooting element!
-              </p>
-            </div>
-          </div>
-          <div className="w-[60px] h-[2px] ml-8 bg-[rgba(255,255,255,0.2)]" />
-        </a>
-        <a
-          href="https://chromewebstore.google.com/detail/twitch-bonus-chest-auto-c/pdjfehhlnpmhgdkoplaoiigclmkoifgb"
-          target="_blank"
-        >
-          <div
-            className={`flex ml-8 mr-8 mb-4 mt-4 gap-6 flex-col ${
-              props.expanded ? "lg:flex-col" : "lg:flex-row"
-            }`}
-          >
-            <Image
-              width={220}
-              height={220}
-              src="/twitch-extension.png"
-              className="rounded-lg w-[220px] h-[128px]"
-              alt="Auto Bonus Chest Claimer Twitch Extension"
-            />
-            <div className="flex flex-col gap-2">
-              <h2 className="font-bold text-xl">Chrome Extension for Twitch</h2>
-              <div className="flex gap-2 font-bold flex-wrap">
-                <div className="px-2 bg-yellow-500 rounded-lg text-black">
-                  Javascript
-                </div>
-                <div className="px-2 bg-purple-500 rounded-lg">1200+ users</div>
-              </div>
-              <p className="text-sm">
-                I&apos;ve created this extension to explore a new field of
-                creation and user interaction. This process led me to discover
-                the possibilities and steps involved in publicly uploading an
-                extension and gaining recurring users over time.
               </p>
             </div>
           </div>
@@ -150,74 +184,7 @@ const ProjectsWindow = forwardRef(({ childRef, ...props }, ref) => {
           </div>
           <div className="w-[60px] h-[2px] ml-8 bg-[rgba(255,255,255,0.2)]" />
         </a>
-        <a
-          href="https://www.linkedin.com/posts/antonylanglois_reverseengineering-python-flask-activity-7170815952886943745-9v6h?utm_source=share&utm_medium=member_desktop"
-          target="_blank"
-        >
-          <div
-            className={`flex ml-8 mr-8 mb-4 mt-4 gap-6 flex-col ${
-              props.expanded ? "lg:flex-col" : "lg:flex-row"
-            }`}
-          >
-            <Image
-              width={220}
-              height={220}
-              src="/vinbot.png"
-              className="rounded-lg w-[220px] h-[128px]"
-              alt="VinBot"
-            />
-            <div className="flex flex-col gap-2">
-              <h2 className="font-bold text-xl">VinBot</h2>
-              <div className="flex gap-2 font-bold flex-wrap">
-                <div className="px-2 bg-orange-500 rounded-lg">Python</div>
-                <div className="px-2 bg-purple-500 rounded-lg">Automation</div>
-                <div className="px-2 bg-red-500 rounded-lg">
-                  Reverse Engineering
-                </div>
-              </div>
-              <p className="text-sm">
-                For a student project with Lilian Hammache, we decided to
-                reverse engineer the Vinted website to receive Discord
-                notifications as soon as new products are posted online.
-              </p>
-            </div>
-          </div>
-          <div className="w-[60px] h-[2px] ml-8 bg-[rgba(255,255,255,0.2)]" />
-        </a>
-        <a href="https://saeromchong.com/" target="_blank">
-          <div
-            className={`flex ml-8 mr-8 mb-4 mt-4 gap-6 flex-col ${
-              props.expanded ? "lg:flex-col" : "lg:flex-row"
-            }`}
-          >
-            <Image
-              width={220}
-              height={220}
-              src="/saerom-portfolio.png"
-              className="rounded-lg w-[220px] h-[128px]"
-              alt="Saerom Chong Portfolio"
-            />
-            <div className="flex flex-col gap-2">
-              <h2 className="font-bold text-xl">
-                정새롬 (Saerom Chong) Portfolio
-              </h2>
-              <div className="flex gap-2 font-bold flex-wrap">
-                <div className="px-2 bg-pink-500 rounded-lg">Figma</div>
-                <div className="px-2 bg-green-500 text-black rounded-lg">
-                  Web Development
-                </div>
-              </div>
-              <p className="text-sm">
-                From creating the Figma mockups to the online launch, this
-                portfolio was designed to help her apply to companies with an
-                innovative and modern online resume. She ultimately secured a
-                job in France, where the recruiter praised her for her
-                refreshing portfolio.
-              </p>
-            </div>
-          </div>
-          <div className="w-[60px] h-[2px] ml-8 bg-[rgba(255,255,255,0.2)]" />
-        </a>
+        
         <a href="https://4chan-remake.antonylanglois.com" target="_blank">
           <div
             className={`flex ml-8 mr-8 mb-4 mt-4 gap-6 flex-col ${
