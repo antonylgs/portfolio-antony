@@ -11,7 +11,7 @@ const MeWindow = forwardRef(({ childRef, ...props }, ref) => {
         <div className="flex flex-col gap-2">
           <h1 className="font-bold text-lg rounded-md">Antony Langlois</h1>
           <a
-            href="mailto:contact@antonylanglois.com"
+            href="mailto:antonylanglois.pro@gmail.com"
             className="italic text-sm flex items-center"
           >
             <Image
@@ -20,7 +20,7 @@ const MeWindow = forwardRef(({ childRef, ...props }, ref) => {
               height={20}
               alt="Airdrop icon"
             />
-            contact@antonylanglois.com
+            antonylanglois.pro@gmail.com
           </a>
         </div>
       </div>
